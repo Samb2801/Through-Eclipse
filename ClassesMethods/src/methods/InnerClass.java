@@ -1,0 +1,18 @@
+package methods;
+ class InnerClass {
+		private int data = 30;
+		class Inner
+		{
+			void msg()
+			{
+				System.out.println("Data is: "+data);
+			}
+		}
+	public static void main(String[] args) {
+		InnerClass obj = new InnerClass();
+		InnerClass.Inner in = obj.new Inner();
+		in.msg();
+		
+	}
+
+}
